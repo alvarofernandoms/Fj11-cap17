@@ -1,0 +1,21 @@
+import java.util.Collection;
+
+public class ProduzSQL implements Runnable {
+	private int comeco;
+	private int fim;
+	private Collection<String> sqls;
+
+	public ProduzSQL(int comece, int fim, Collection<String> sqls) {
+		this.comeco = comeco;
+		this.fim = fim;
+		this.sqls = sqls;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		for (int i = comeco; i < fim; i++) {
+			sqls.add("SQL" + 1);
+		}
+	}
+}
