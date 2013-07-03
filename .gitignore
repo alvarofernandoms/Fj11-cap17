@@ -1,0 +1,11 @@
+# Java .class #
+*.class
+
+# Especificações do Eclipse #
+.classpath
+.project
+.settings
+.springBeans
+
+# Pasta bin #
+bin/
